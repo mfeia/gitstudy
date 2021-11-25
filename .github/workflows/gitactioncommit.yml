@@ -4,7 +4,7 @@ on:
     types: [created, edited, deleted]
 
 jobs:
-  commit:
+  runcomit:
     if: contains(github.event.comment.html_url, '/pull/')    # check if the comments come from pull request, exclude those from issue.
     runs-on: [ubuntu-latest]
     steps:
