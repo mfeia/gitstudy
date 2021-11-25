@@ -9,7 +9,7 @@ jobs:
   runtest:
     runs-on: ubuntu-latest
     steps:
-      - name: Run unit test
-        run: |
+    - name: Run unit test
+      run: |
           # set vars
           echo pull test
