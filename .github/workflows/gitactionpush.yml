@@ -1,0 +1,15 @@
+name: Require pull request
+
+on:
+  # quick tests for every pull request
+  push:
+  pull_request:
+
+jobs:
+  runtest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run unit test
+        run: |
+          # set vars
+          echo pull test
